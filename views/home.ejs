@@ -1,0 +1,90 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>Home</title>
+    
+  </head>
+  
+  <style>
+    .pulsating-circle {
+      width: 25px;
+      height: 25px;
+      background-color: red;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+      <h2 style="color: #0a1433;">Buna ziua, <%= myUser.prenume %></h2>
+      <h5>Bine ai venit pe platforma noastră de vot electronic. Este timpul să îți faci vocea auzită!</h5>
+      <h5>Totul este simplu:</h5>
+      <ul>
+        <li><i class="fa-solid fa-user" style="font-size: 20px;"></i> <span style="font-size: 20px;">Verifică-ți identitatea.</span></li>
+        <li><i class="fa-solid fa-check" style="font-size: 20px;"></i> <span style="font-size: 20px;">Alege candidatul favorit.</span></li>
+        <li><i class="fa-solid fa-lock" style="font-size: 20px;"></i> <span style="font-size: 20px;">Confirmă votul.</span></li>
+        <li><i class="fa-solid fa-file" style="font-size: 20px;"></i> <span style="font-size: 20px;">Genereaza certificatul.</span></li>
+      </ul>
+    </div>
+    <div class="stats-box">
+      <div class="stats-title">
+        <h4>Statistici vot live</h4>
+      </div>    
+      <div style="margin-left: 15px; margin-top: 2px;" class="pulsating-circle">
+
+      </div>
+    </div>
+        
+    </div>
+    <div class="box-chart">
+      <div class="chart">
+        <canvas id="sex-chart"></canvas>
+      </div>
+      <div class="chart">
+        <canvas id="age-chart"></canvas>
+      </div>
+      <div class="chart">
+        <canvas id="time-chart"></canvas>
+      </div>
+      <div class="chart">
+        <canvas id="percent-chart"></canvas>
+      </div>
+    </div>
+    <div class="flex-box">
+      <div class="text-box">
+        <h3 class="votes"><span class="numberVotes" style="color: #e65528;"><%=numberVotes%></span> de voturi înregistrate din totalul de <span class="totalVotes" style="color: #e65528;">10</span></h3>
+      </div>
+      <div class="percent-text">
+        <h4> <span class="percent" style="color: #e65528;"> </span>dintre cetățeni și-au exprimat opțiunea de vot în cadrul acestor alegeri.</h4>
+      </div>
+      <div>
+        <h5>Procesul durează doar câteva minute. Apasă <span style="color: #e65528;">Start </span>pentru a începe sesiunea de vot!</h5>
+      </div>
+    </div>
+    <div class="btn-box">
+      <div class="start-btn-box">
+        <a href="/identity-verification" class="start-btn">START</a>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/script/home.js"></script>
+    <%-include('partials/footer')%>
+  </body>
+</html>

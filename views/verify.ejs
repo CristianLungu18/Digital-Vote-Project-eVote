@@ -1,0 +1,115 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/verify.css" />
+    <title>Verify</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+        <h2>Pasul 1: Verificarea identității</h2>
+       </div>
+   <div class="grid-box">
+        <div class="first-step">
+            <img class="first-photo" src="/img/FirstStep.png" alt="">
+            <h5 style="color: #e65528; ;">Pasul 1</h5>
+            <h6 style="color: #6c757d;">Verificarea identității</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+            
+        </div>
+        <div class="second-step">
+            <img class="second-photo" src="/img/SecondStep.png" alt="">
+            <h5 style="color: #0a1433 ; ">Pasul 2</h5>
+            <h6 style="color: #6c757d;">Selectarea candidatului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="third-step">
+            <img class="third-photo" src="/img/thirdStep.png" alt="">
+            <h5 style="color: #0a1433 ; ">Pasul 3</h5>
+            <h6 style="color: #6c757d;">Confirmarea votului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="fourth-step">
+            <img class="fourth-photo" src="/img/fourthStep.png" alt="">
+            <h5 style="color: #0a1433 ; ">Pasul 4</h5>
+            <h6 style="color: #6c757d;">Generarea certificatului</h6>
+        </div>
+   </div>
+  
+    <div class="mb-3 container input-box">
+        <input type="email" class="form-control cnp-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduceti CNP-ul dumneavoastra" style="text-align: center;">
+        <div class="invalid-cnp-box" style="text-align: center;">
+              
+        </div>
+        <div id="emailHelp" class="form-text help-text">We'll never share your data with anyone else.</div>
+        <div class="check-btn-box">
+            <button type="submit" class="check-btn">Verifica CNP</button>
+        </div>
+    </div>
+    <div class="grid-box-result visibility">
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Nume Complet</label>
+            <input type="email" class="form-control cnp-input nume-input-result " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nume Complet" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Prenume Complet</label>
+            <input type="email" class="form-control cnp-input prenume-input-result " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prenume Complet" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Serie</label>
+            <input type="email" class="form-control cnp-input  serie-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Serie" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Numar</label>
+            <input type="email" class="form-control cnp-input  numar-buletin-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Numar" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Strada</label>
+            <input type="email" class="form-control cnp-input  strada-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Strada" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Numar</label>
+            <input type="email" class="form-control cnp-input  numar-bloc-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Numar" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Bloc</label>
+            <input type="email" class="form-control cnp-input  bloc-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Bloc" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Scara</label>
+            <input type="email" class="form-control cnp-input  scara-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Scara" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Apartament</label>
+            <input type="email" class="form-control cnp-input  apartamnet-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apartament" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Oras</label>
+            <input type="email" class="form-control cnp-input  oras-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Oras" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Judet</label>
+            <input type="email" class="form-control cnp-input  judet-input-result " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Judet" style="text-align: center;">
+        </div>
+        <div class="result-box">
+            <label for="exampleFormControlInput1" class="form-label">Cod Postal</label>
+            <input type="email" class="form-control cnp-input  cod-postal-input-result" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cod Postal" style="text-align: center;">
+        </div>
+    </div>
+    <div class="form-check check-box visibility">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault" style="margin-top:6px; margin-left: 5px;">
+             Confirm că datele furnizate sunt corecte și îmi aparțin, fiind de acord cu prelucrarea acestora conform Regulamentului (UE) 2016/679 privind protecția datelor (GDPR) și altor reglementări legale aplicabile.
+        </label>
+    </div>
+    <div class="confirm-btn-box visibility">
+        <button class="confirm-btn">Confirm</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script/verifyCNP.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #0a1433 !important;
+  height: 4rem;
+}
+.login-text {
+  background-color: #e65528;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.4s;
+  cursor: pointer;
+}
+.signup-text {
+  background-color: #e65528;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.4s;
+  cursor: pointer;
+}
+.admin-text {
+  background-color: #e65528;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.4s;
+  cursor: pointer;
+}
+.login-text:hover,
+.signup-text:hover,
+.admin-text:hover {
+  box-shadow: 0px 0px 15px #e65528;
+}
+.nav-left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 1.6rem;
+  margin-left: 50px;
+}
+.nav-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 1.6rem;
+  margin-right: 50px;
+}
+.nav-right a,
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.4s;
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  transition: opacity 0.4s;
+}
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.4s;
+}
+
+.title {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  margin-top: 50px;
+}
+.votes {
+  font-size: 25px;
+}
+.stats-box {
+  display: flex;
+  justify-content: center;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 45px;
+}
+.start-btn {
+  padding: 15px 100px;
+  background-color: #e65528;
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-radius: 25px;
+  transition: box-shadow 0.4s;
+  text-decoration: none;
+}
+.start-btn:hover {
+  box-shadow: 0px 0px 15px #e65528;
+}
+.footer {
+  color: white;
+  background-color: #0a1433;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+  margin-top: 26px;
+}
+.p-box {
+  margin-top: 20px;
+}
+.chart {
+  width: 850px;
+  padding-left: 130px;
+  margin-bottom: 25px;
+}
+.box-chart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+ul {
+  list-style: none; /* Elimină punctele default */
+  padding: 0; /* Elimină padding-ul default */
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center; /* Aliniază vertical iconița și textul */
+  margin-bottom: 10px; /* Adaugă spațiu între elementele listei */
+}
+li i {
+  margin-right: 10px; /* Spațiu între iconiță și text */
+}
+li span {
+  font-size: 25px; /* Setează dimensiunea textului */
+}

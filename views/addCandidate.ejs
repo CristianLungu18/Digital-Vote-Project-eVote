@@ -1,0 +1,95 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/addCandidate.css" />
+    <title>Add-Candidate</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+      <h1>Add Candidate</h1>
+    </div>
+    <div class="add-box" style="margin-top: 90px;">
+      <form class="add-form" >
+        <div class="mb-3 input-box">
+          <label for="formGroupExampleInput" class="form-label">Nume</label>
+          <input
+            type="text"
+            class="form-control input-nume"
+            id="formGroupExampleInput"
+            placeholder="Example input placeholder"
+            name="nume"
+          />
+          <div class="invalid-feedback invalid-nume-box">
+              
+          </div>
+        </div>
+        <div class="mb-3 input-box">
+          <label for="formGroupExampleInput" class="form-label">Prenume</label>
+          <input
+            type="text"
+            class="form-control input-prenume"
+            id="formGroupExampleInput"
+            placeholder="Example input placeholder"
+            name="prenume"
+            
+          />
+          <div class="invalid-feedback invalid-prenume-box">
+              
+          </div>
+        </div>
+        <div class="mb-3  input-box">
+          <label for="formGroupExampleInput" class="form-label"
+            >Descriere</label
+          >
+          <input
+            type="text"
+            class="form-control input-descriere"
+            id="formGroupExampleInput"
+            placeholder="Example input placeholder"
+            name="descriere"
+            
+          />
+          <div class="invalid-feedback invalid-descriere-box">
+              
+          </div>
+        </div>
+        <div class="mb-3  input-box">
+          <label for="formGroupExampleInput" class="form-label"
+            >Varsta</label
+          >
+          <input
+            type="text"
+            class="form-control input-varsta"
+            id="formGroupExampleInput"
+            placeholder="Example input placeholder"
+            name="varsta"
+           
+          />
+          <div class="invalid-feedback invalid-varsta-box">
+              
+          </div>
+        </div>
+        <div class="mb-3  input-box">
+            <label for="formGroupExampleInput" class="form-label"
+              >Partid</label
+            >
+            <input
+              type="text"
+              class="form-control input-partid"
+              id="formGroupExampleInput"
+              placeholder="Example input placeholder"
+              name="partid"
+             
+            />
+            <div class="invalid-feedback invalid-partid-box">
+              
+            </div>
+          </div>
+        <div class="btn-box" style="margin-top: 60px;">
+          <button type="submit" class="add-btn"><i class="fa-solid fa-floppy-disk"></i><span style="margin-left: 15px;">Add</span></button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script/addCandidate.js"></script>
+  </body>
+</html>

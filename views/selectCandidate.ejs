@@ -1,0 +1,79 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/selectCandidate.css" />
+    <title>Verify</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+        <h2>Pasul 2: Selectarea candidatului</h2>
+       </div>
+   <div class="grid-box">
+        <div class="first-step">
+            <img class="first-photo" src="/img/FirstStep-checked.png" alt="">
+            <h5 style="color:#0a1433;">Pasul 1</h5>
+            <h6 style="color: #6c757d;">Verificarea identității</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+            
+        </div>
+        <div class="second-step">
+            <img class="second-photo" src="/img/SecondStep.png" alt="">
+            <h5 style="color:  #e65528;">Pasul 2</h5>
+            <h6 style="color: #6c757d;">Selectarea candidatului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="third-step">
+            <img class="third-photo" src="/img/thirdStep.png" alt="">
+            <h5 style="color: #0a1433;">Pasul 3</h5>
+            <h6 style="color: #6c757d;">Confirmarea votului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="fourth-step">
+            <img class="fourth-photo" src="/img/fourthStep.png" alt="">
+            <h5 style="color: #0a1433;">Pasul 4</h5>
+            <h6 style="color: #6c757d;">Generarea certificatului</h6>
+        </div>
+   </div>
+  
+   <div class="select-box">
+    <label for="formGroupExampleInput2" class="form-label select-list">Alegeti candidatul din urmatoarea lista:</label>
+          <select class="form-select candidat-input " aria-label="Default select example">
+            <option selected></option>
+            <option value="anulat">imi anulez votul</option>
+            <%candidates.forEach(candidate=>{ %>
+            <option value="<%= candidate.nume %> <%= candidate.prenume %>"><%= candidate.nume %> <%= candidate.prenume %> - <%= candidate.partid %></option>
+            <%})%>
+          </select>
+          <div class="invalid-feedback invalid-sex-box">
+              
+          </div>
+   </div>
+   <div class="select-btn-box">
+    <button class="select-btn step-3-btn">Confirm</button>
+    <!--  -->
+   </div>
+   <div class="card-box">
+        <%candidates.forEach(candidate=>{ %>
+        <div class="card" style="width: 16rem;">
+            <img src="/img/<%=candidate.partid %>.png" style="width: 255px; " class="card-img-top" alt="...">
+            <div class="card-body">
+            <h3 class="card-title" style="font-size: 20px;"><%= candidate.nume%> <%= candidate.prenume%></h3>
+            <p class="card-text"><%= candidate.descriere%></p>
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%=candidate.varsta %> ani</li>
+            <li class="list-group-item"><%= candidate.partid%></li>
+            </ul>
+        </div>
+        <%})%>
+   </div>
+   <%-include('partials/footer')%>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="/script/selectCandidate.js"></script>
+  </body>
+</html>

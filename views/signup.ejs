@@ -1,0 +1,145 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <%-include('partials/navbar')%>
+    <div class="title">
+      <h1>Sign Up</h1>
+    </div>
+    <div class="alert-box visibility" style="height: 70px;">
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Felicitar!</strong> Contul a fost inregistrat cu succes, va rugam sa va autentificati !
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    </div>
+    <div class="form-box">
+      <form class="form-container">
+        <div class="form-box-1">
+          <div class="mb-3 form-box-input">
+            <label for="formGroupExampleInput" class="form-label">Nume</label>
+            <input
+              type="text"
+              class="form-control name-input"
+              id="formGroupExampleInput"
+              placeholder="Introdu numele tău complet"
+            />
+            <div class="invalid-feedback invalid-name-box">
+              
+            </div>
+          </div>
+          <div class="mb-3 form-box-input">
+            <label for="formGroupExampleInput2" class="form-label"
+              >Prenume</label
+            >
+            <input
+              type="text"
+              class="form-control prenume-input"
+              id="formGroupExampleInput2"
+              placeholder="Introdu prenumele tău"
+            />
+            <div class="invalid-feedback invalid-prenume-box">
+              
+            </div>
+          </div>
+          <div class="mb-3  form-box-input">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control username-input"
+              id="exampleInputEmail1"
+              aria-describedby="usernamehelp"
+              placeholder="Alege un username unic"
+            />
+            <div class="invalid-feedback invalid-username-box">
+              
+            </div>
+          </div>
+          <div class="mb-3  form-box-input">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control email-input"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="nume@example.com"
+            />
+            <div class="invalid-feedback invalid-email-box">
+              
+            </div>
+          </div>
+        </div>
+        <div class="form-box-2">
+          <div class="mb-3 form-box-input">
+            <label for="formGroupExampleInput2" class="form-label"
+              >Password</label
+            >
+            <input
+              type="text"
+              class="form-control password-input"
+              id="formGroupExampleInput2"
+              aria-describedby="passwordHelp"
+              placeholder="Alege o parolă sigură, minim 10 caractere"
+            />
+            <div class="invalid-feedback invalid-password-box">
+              
+            </div>
+          </div>
+          <div class="mb-3  form-box-input">
+            <label for="formGroupExampleInput2" class="form-label"
+              >Confirm Password</label
+            >
+            <input
+              type="text"
+              class="form-control confirmPassword-input"
+              id="formGroupExampleInput2"
+              placeholder="Confirmă parola aleasă"
+            />
+            <div class="invalid-feedback invalid-confirmPassword-box">
+              
+            </div>
+          </div>
+          <div class="mb-3  form-box-input">
+            <label for="formGroupExampleInput2" class="form-label"
+              >Varsta</label
+            >
+            <input
+              type="text"
+              class="form-control varsta-input"
+              id="formGroupExampleInput2"
+              aria-describedby="agehelp"
+              placeholder="Doar peste 18 ani"
+            />
+            <div class="invalid-feedback invalid-varsta-box">
+              
+            </div>
+          </div>
+          <label for="formGroupExampleInput2" class="form-label">Sex</label>
+          <select class="form-select sex-input " aria-label="Default select example">
+            <option selected></option>
+            <option value="M">M</option>
+            <option value="F">F</option>
+            <option value="Prefer sa nu spun">Prefer sa nu spun</option>
+          </select>
+          <div class="invalid-feedback invalid-sex-box">
+              
+          </div>
+        </div>
+      </form>
+      <div class="btn-box">
+        <button class="signup-btn" type="submit">Sign Up</button>
+      </div>
+      <p style="color: #6c757d; font-size: 15px; margin-top: 15px">
+        If you have an account, please
+        <span><a href="/login" style="color: #0a1433">log in.</a></span>
+      </p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script/signupValidation.js"></script>
+    <script src="/script/signup.js"></script>
+    <%-include('partials/footer')%>
+  </body>
+</html>

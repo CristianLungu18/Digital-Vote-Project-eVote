@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina nu a fost găsită</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0a1433;
+        filter: blur(10px);
+        z-index: -1;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .message {
+        font-size: 32px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <div class="message">Această rută nu există!</div>
+    </div>
+  </body>
+</html>

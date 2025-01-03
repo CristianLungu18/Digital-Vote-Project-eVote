@@ -1,0 +1,118 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/reviewVote.css" />
+    <title>Verify</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+        <h2>Pasul 3: Confirmarea votului</h2>
+       </div>
+   <div class="grid-box">
+        <div class="first-step">
+            <img class="first-photo" src="/img/FirstStep-checked.png" alt="">
+            <h5 style="color:  #0a1433; ">Pasul 1</h5>
+            <h6 style="color: #6c757d;">Verificarea identității</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+            
+        </div>
+        <div class="second-step">
+            <img class="second-photo" src="/img/SecondStep-checked.png" alt="">
+            <h5 style="color:  #0a1433; " >Pasul 2</h5>
+            <h6 style="color: #6c757d;">Selectarea candidatului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="third-step">
+            <img class="third-photo" src="/img/thirdStep.png" alt="">
+            <h5 style="color:  #e65528; "">Pasul 3</h5>
+            <h6 style="color: #6c757d;">Confirmarea votului</h6>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right" style="font-size: 50px; color: #e65528;"></i>
+        </div>
+        <div class="fourth-step">
+            <img class="fourth-photo" src="/img/fourthStep.png" alt="">
+            <h5 style="color:  #0a1433; ">Pasul 4</h5>
+            <h6 style="color: #6c757d;">Generarea certificatului</h6>
+        </div>
+   </div>
+   
+   <div class="data-title">
+    <h4 >Datele dumnevoastra:</h4>
+   </div>
+   <div class="data-flex">
+    <div class="data-box-grid">
+        <div class="data-box">
+            <p>CNP</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.CNP %></p>
+        </div>
+        <div class="data-box">
+            <p>Nume</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.nume %></p>
+        </div>
+        <div class="data-box">
+            <p>Prenume</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.prenume %></p>
+        </div>
+    
+        <div class="data-box">
+            <p>Serie</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.serie %></p>
+        </div>
+        <div class="data-box">
+            <p>Numar</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.numar %></p>
+        </div>
+        <div class="data-box">
+            <p>Oras</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.oras %></p>
+        </div>
+        <div class="data-box">
+            <p>Varsta</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.varsta %></p>
+        </div>
+        <div class="data-box">
+            <p>Sex</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.sex %></p>
+        </div>
+        <div class="data-box">
+            <p>Candidat</p>
+        </div>
+        <div class="data-value">
+            <p><%= myVote.candidat %></p>
+        </div>
+       </div>
+   </div>
+   <div class="form-check check-box visibility">
+    <input class="form-check-input checkinput" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault" style="margin-bottom:4px; margin-left: 5px;">
+        Te rugăm să verifici încă o dată informațiile din această secțiune.Dacă toate datele sunt corecte, poți apăsa pe butonul "Pasul 4".
+    </label>
+   </div> 
+   <div class="check-btn-box">
+    <a href="/generate-certificate" class="confirm-btn">Pasul 4  <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="/script/reviewVote.js"></script>
+   <%-include('partials/footer')%>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/rezultate.css" />
+    <title>Rezultate</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+      <h1>Rezultate</h1>
+    </div>
+    <div class="stats-box">
+      <ul class="list">
+        
+      </ul>
+    </div>
+    <div class="box-chart">
+      <div class="chart">
+        <canvas id="voturi-chart"></canvas>
+      </div>
+    </div>
+    <%-include('partials/footer')%>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/script/rezultate.js"></script>
+</html>

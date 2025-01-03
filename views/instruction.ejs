@@ -1,0 +1,87 @@
+<%-include('partials/header') %>
+    <link rel="stylesheet" href="/css/instruction.css" />
+    <title>Instructiuni</title>
+  </head>
+  <body>
+    <%-include('partials/navbar') %>
+    <div class="title">
+      <h1>Instrucțiuni</h1>
+    </div>
+    <div class="container-box">
+        <div class="photo-container">
+          <img src="/img/FirstStep.png" alt="">
+        </div>
+        <div class="text-container">
+          <div class="list-box">
+            <h4 style="text-align: center;color: #0a1433; font-weight: 700;">Pasul 1: Verificarea identității</h4>
+            <ol class="list">
+              <li>Introduceți CNP-ul și alte informații necesare, cum ar fi seria și numărul buletinului.</li>
+              <li>Sistemul va verifica dacă sunteți eligibil pentru a vota:
+                <ul>
+                  <li>Ați împlinit vârsta legală de vot.</li>
+                  <li>Sunteți înregistrat în baza de date a votanților.</li>
+                  <li>Nu ați votat deja.</li>
+                </ul>
+              </li>
+              <li>Apăsați pe butonul "Verifică identitatea".</li>
+              <li>În caz de succes, veți fi redirecționat automat către următorul pas.</li>
+              <li>Dacă datele introduse sunt incorecte, veți primi un mesaj de eroare. Verificați și introduceți din nou datele corecte.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/img/SecondStep.png" alt="">
+        </div>
+        <div class="text-container">
+          <div class="list-box">
+           <h4 style="text-align: center;color: #0a1433; font-weight: 700;">Pasul 2: Selectarea candidatului</h4>
+            <ol class="list">
+              <li>După verificarea identității, veți fi redirecționat către pagina cu lista candidaților.</li>
+              <li>Fiecare candidat va avea afișate următoarele informații:
+                <ul>
+                  <li>Nume complet.</li>
+                  <li>Partidul sau organizația pe care o reprezintă.</li>
+                  <li>O descriere scurtă (opțională).</li>
+                </ul>
+              </li>
+              <li>Navigați prin listă pentru a analiza toate opțiunile disponibile.</li>
+              <li>Selectați candidatul dorit apăsând pe butonul "Alege" sau marcând caseta asociată acestuia.</li>
+              <li>După ce ați făcut alegerea, sistemul vă va permite să treceți la pasul următor pentru a confirma selecția.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/img/ThirdStep.png" alt="">
+        </div>
+        <div class="text-container">
+          <div class="list-box">
+            <h4 style="text-align: center;color: #0a1433; font-weight: 700;">Pasul 3: Confirmarea votului</h4>
+            <ol class="list">
+              <li>După ce ați selectat candidatul/opțiunea dorită, veți fi redirecționat către o pagină de rezumat al votului.</li>
+              <li>Verificați cu atenție detaliile afișate pentru a vă asigura că reflectă corect alegerea dumneavoastră.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="photo-container">
+          <img src="/img/FourthStep.png" alt="">
+        </div>
+        <div class="text-container">
+          <div class="list-box">
+            <h4 style="text-align: center;color: #0a1433; font-weight: 700;">Pasul 4: Generarea certificatului</h4>
+            <ol class="list">
+              <li>După confirmarea votului, sistemul va genera automat un certificat de confirmare a votului.</li>
+              <li>Certificatul va conține următoarele informații:
+                <ul>
+                  <li>Un cod unic de identificare al votului (pentru verificări ulterioare).</li>
+                  <li>Data și ora la care votul a fost înregistrat.</li>
+                  <li>Mesaj de confirmare că votul a fost procesat cu succes.</li>
+                </ul>
+              </li>
+              <li>Asigurați-vă că salvați certificatul într-un loc sigur, deoarece va servi ca dovadă a participării dumneavoastră la procesul electoral.</li>
+            </ol>
+          </div>
+        </div>
+    </div>
+    <%-include('partials/footer')%>
+  </body>
+</html>
